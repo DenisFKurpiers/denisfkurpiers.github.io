@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project #120 </title>
+  <style>
+    /* Remove default margins, make body fill viewport */
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+
+    body {
+      position: relative;
+      color: white;
+      text-align: center;
+      background: black; /* fallback */
+    }
+
+    /* Fullscreen background image */
+    .background-image {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('images/beer.jpeg') no-repeat center center;
+      background-size: cover;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+
+    /* Slogan container */
+    .slogan {
+      position: fixed;
+      bottom: 5%;
+      width: 100%;
+      font-size: 6rem;
+      font-weight: bold;
+      text-shadow:
+        2px 2px 8px rgba(0,0,0,0.8),
+        0 0 10px rgba(0,0,0,0.6);
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="slogan">Take a break, have 120 beers</div>
+</body>
+</html>
