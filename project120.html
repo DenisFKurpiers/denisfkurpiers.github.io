@@ -25,8 +25,8 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end; /* push content to bottom */
-      padding: 20rem;
+      justify-content: flex-end; 
+      padding: 20rem 2rem 5rem; 
       box-sizing: border-box;
     }
 
@@ -43,7 +43,7 @@
     }
 
     .slogan {
-      font-size: 4rem;
+      font-size: 4rem; 
       font-weight: bold;
       text-shadow:
         2px 2px 8px rgba(0,0,0,0.8),
@@ -54,7 +54,7 @@
     }
 
     .description-text {
-      font-size: 1.8rem;
+      font-size: 1.8rem; 
       font-style: italic;
       line-height: 1.4;
       color: #ccc;
@@ -62,6 +62,7 @@
       margin: 0 auto 3rem auto;
       user-select: none;
       z-index: 10;
+      padding: 0 1rem;
     }
 
     .content-section {
@@ -75,7 +76,7 @@
     }
 
     .app-icon {
-      width: 250px;
+      width: 250px; 
       height: 250px;
       border-radius: 50%;
       background: url('images/iTunesArtwork@2x.png') no-repeat center center;
@@ -86,7 +87,7 @@
     }
 
     .project-text {
-      font-size: 5rem;
+      font-size: 5rem; 
       font-weight: bold;
       text-shadow:
         2px 2px 8px rgba(0,0,0,0.8),
@@ -95,13 +96,42 @@
     }
 
     .winner-quote {
-      font-size: 1.8rem;
+      font-size: 1.8rem; 
       font-style: italic;
       line-height: 1.4;
       color: #ccc;
       margin-top: 2rem;
       max-width: 700px;
       user-select: none;
+    }
+
+    
+    @media (max-width: 600px) {
+      .top-section {
+        padding: 5rem 1.5rem 3rem; 
+        justify-content: flex-start; 
+        height: auto; 
+      }
+
+      
+
+      .description-text {
+        max-width: 95vw; 
+      }
+
+      .app-icon {
+        width: 200px; 
+        height: 200px;
+        margin: 3rem auto 0;
+      }
+
+      .content-section {
+        padding: 4rem 1rem 10rem;
+      }
+
+      .winner-quote {
+        max-width: 90vw;
+      }
     }
   </style>
 </head>
