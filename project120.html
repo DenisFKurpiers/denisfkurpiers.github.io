@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project #120 </title>
+  <title>Project #120</title>
   <style>
-    /* Remove default margins, make body fill viewport */
     html, body {
       margin: 0;
+      padding: 0;
       height: 100%;
-      overflow: hidden;
       font-family: system-ui, sans-serif;
+      background: black;
+      color: white;
     }
 
     body {
-      position: relative;
-      color: white;
+      overflow-y: auto;
       text-align: center;
-      background: black; /* fallback */
     }
 
-    /* Fullscreen background image */
+    .top-section {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* push content to bottom */
+      padding: 20rem;
+      box-sizing: border-box;
+    }
+
     .background-image {
       position: fixed;
       top: 0; left: 0;
@@ -29,25 +38,92 @@
       background: url('images/Beer.jpeg') no-repeat center center;
       background-size: cover;
       filter: brightness(0.7);
-      z-index: -1;
+      z-index: 0;
+      opacity: 0.2;
     }
 
-    /* Slogan container */
     .slogan {
-      position: fixed;
-      bottom: 5%;
-      width: 100%;
-      font-size: 6rem;
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow:
+        2px 2px 8px rgba(0,0,0,0.8),
+        0 0 10px rgba(0,0,0,0.6);
+      user-select: none;
+      z-index: 10;
+      margin-bottom: 1rem;
+    }
+
+    .description-text {
+      font-size: 1.8rem;
+      font-style: italic;
+      line-height: 1.4;
+      color: #ccc;
+      max-width: 1400px;
+      margin: 0 auto 3rem auto;
+      user-select: none;
+      z-index: 10;
+    }
+
+    .content-section {
+      background: black;
+      padding: 5rem 2rem 12rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .app-icon {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: url('images/iTunesArtwork@2x.png') no-repeat center center;
+      background-size: contain;
+      box-shadow:
+        0 0 30px 5px rgba(255, 255, 255, 0.4);
+      margin: 4rem auto 0;
+    }
+
+    .project-text {
+      font-size: 5rem;
       font-weight: bold;
       text-shadow:
         2px 2px 8px rgba(0,0,0,0.8),
         0 0 10px rgba(0,0,0,0.6);
       user-select: none;
     }
+
+    .winner-quote {
+      font-size: 1.8rem;
+      font-style: italic;
+      line-height: 1.4;
+      color: #ccc;
+      margin-top: 2rem;
+      max-width: 700px;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
-  <div class="background-image"></div>
-  <div class="slogan">Take a break, have 120 beers</div>
+  <div class="top-section">
+    <div class="background-image"></div>
+    <div class="slogan">Take a break, have 120 beers</div>
+    <div class="description-text">
+      Project120 is all about having the best summer with your buddies.<br>See who can finish 120 beers and come out on top.<br>
+      Track every beer, challenge your friends, and make memories worth remembering.<br>
+      No fluff, no gimmicks - just good times, friendly competition, and plenty of cold ones.<br>
+      Ready to prove you've got what it takes? Let's get started.
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="app-icon"></div>
+    <div class="project-text">PROJECT120</div>
+    <div class="winner-quote">
+      "Ja bych tak chtel zpatky karantenu to byl paradoxne takovej freedom"<br><br>
+      - Stiffi, 2025 Winner
+    </div>
+  </section>
 </body>
 </html>
