@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS - Spinning Photos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f0f4f8;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+            text-align: center; /* Override inline left align for better centering */
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #1e3a8a; /* A strong blue */
+            margin-bottom: 30px;
+        }
+
+        .photo {
+            display: flex;
+            justify-content: center; /* Center the images */
+            gap: 20px; /* Space between the images */
+        }
+
+        .photo img {
+            width: 200px; 
+            height: 200px;
+            border: 4px solid #fff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px; /* Rounded corners for aesthetics */
+            object-fit: cover; /* Ensures images fill the 200x200 space without stretching */
+
+            /* --- SPINNING ANIMATION CSS --- */
+            animation: spin 4s linear infinite;
+        }
+        
+        /* Define the actual spinning movement */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center" >ERIK LIU</h1>
+    <p style="font-size: large; color: blue;">my name is erik liu and I love little boys</p>
+    
+    <div class="photo">
+        <!-- Note: We are using placeholder images since the local paths won't work -->
+        <img src="images_pms/IMG_2266.jpg" alt="erik">
+        <img src="images_pms/IMG_2269.jpg" alt="erikreal">
+    </div>    
+    
+    <!-- We don't need any JavaScript, as we are using pure CSS for the continuous spinning effect -->
+</body>
+</html>
