@@ -17,65 +17,78 @@
       line-height: 1.6;
     }
 
+    /* --- Header and Logo: Made less padded and logo smaller --- */
     header {
       background:#004D99;
-      padding: 20px;
+      padding: 10px 0; /* Reduced padding */
+      border-bottom: 2px solid #003b70; /* Added a sleek line */
     }
 
     header img {
-      max-width: 160px;
+      max-width: 120px; /* Smaller logo */
       height: auto;
     }
 
     h1 {
       margin: 30px 0 10px;
-      font-size: 2.2rem;
-      font-weight: 600;
+      font-size: 1.8rem; /* Slightly smaller H1 */
+      font-weight: 500; /* Lighter font weight */
       color: #004D99;
     }
 
     .buttons {
-      margin: 50px 0;
+      margin: 40px 0; /* Reduced margin */
       flex: 1;
     }
 
+    /* --- Buttons: Reduced bulk and made appearance sharper/sleeker --- */
     .btn {
       display: inline-block;
       background: #004D99;
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1rem; /* Smaller font size */
       font-weight: 500;
-      padding: 16px 36px;
-      margin: 15px;
+      padding: 12px 28px; /* Reduced vertical padding */
+      margin: 10px; /* Reduced margin */
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 4px; /* Sharper corners (less bulky) */
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      /* Lighter, sleeker shadow */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
     }
 
     .btn:hover {
       background: #003b70;
-      transform: translateY(-8px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      /* Removed translateY for a flatter, sleeker interaction */
+      transform: none; 
+      /* Slightly more visible shadow on hover */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
     }
 
+    /* --- Footer: Condensed links and reduced padding --- */
     footer {
       background-color: #f1f3f5;
-      padding: 20px;
+      padding: 15px 20px; /* Reduced padding */
       border-top: 1px solid #e0e0e0;
+      /* Added features to better manage the large number of links */
+      overflow-x: auto; 
+      white-space: nowrap;
     }
 
     footer a {
       display: inline-block;
       color: #004D99;
       text-decoration: none;
-      margin: 0 12px;
-      font-weight: 500;
+      margin: 0 8px; /* Reduced link spacing */
+      font-weight: 400; /* Lighter weight */
+      font-size: 0.9rem; /* Smaller font */
       transition: color 0.2s ease;
     }
 
     footer a:hover {
       color: #002f5c;
+      /* Adding a subtle background highlight on hover for sleekness */
+      background-color: #e6f0fa;
     }
   </style>
 </head>

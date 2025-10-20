@@ -7,15 +7,17 @@
     <style> 
     body {
         text-align: center;
-        padding: 20px;
+        /* Reduced body padding */
+        padding: 10px; 
+        font-family: sans-serif; /* Added a basic font for cleaner look */
     }
     nav {
         background-color: #ffffff;
-        padding: 10px;
+        padding: 8px; /* Reduced nav padding */
         text-align: center;
     }
 
-     nav a {
+      nav a {
         margin: 0 10px;
         text-decoration: none;
         color: #333;
@@ -23,27 +25,30 @@
     } 
 
     h1 {
-        margin-top: 30px;
+        margin-top: 20px; /* Reduced margin */
     }
 
     .project-list {
         display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 600px;
-      margin: 30px auto;
+        flex-direction: column;
+        gap: 10px; /* Reduced gap between cards */
+        /* Reduced max-width to make cards narrower */
+        max-width: 500px; 
+        margin: 20px auto; /* Reduced margin */
     }
     
     .project-card {
-        background-color: #f8f8f8;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
+        /* Made background color white for a more basic look */
+        background-color: #ffffff; 
+        /* Reduced border thickness for a lighter look */
+        border: 1px solid #eee; 
+        border-radius: 4px; /* Reduced border-radius */
+        padding: 10px; /* Significantly reduced card padding */
         text-align: left;
         transition: background-color 0.2s;
     }
     .project-card:hover {
-        background-color: #f0f0f0;
+        background-color: #f5f5f5; /* Lighter hover color */
     }
     .project-card a {
         color: inherit;
@@ -51,9 +56,15 @@
         display: block;
     }
     .project-card h2 {
-        margin-top: 0;
+        margin: 0 0 5px 0; /* Reduced margin on h2 for less padding/spacing */
+        font-size: 1.2em; /* Slightly smaller heading */
     }
-        
+    .project-card p {
+        margin: 0; /* Remove default paragraph margin for less padding */
+        font-size: 0.9em; /* Smaller text */
+        color: #666; /* Gray out description for contrast */
+    }
+    
     </style>
 </head>
 <body>
@@ -86,13 +97,6 @@
             <a href="aat.html">
                 <h2>AAT - Analysis Aptitude Testing</h2>
                 <p>Analysis aptitude testing with new tests every week</p>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="pms.html">
-                <h2>PMS</h2>
-                <p>Porg medical society website for my dear colleague</p>
             </a>
         </div>
 
