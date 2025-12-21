@@ -7,115 +7,137 @@
     <style> 
     body {
         text-align: center;
-        
-        padding: 10px; 
+        padding: 20px 10px; 
         font-family: sans-serif; 
+        background-color: #f4f4f4;
+        color: #333;
     }
+    
     nav {
-        background-color: #ffffff;
+        background-color: #f4f4f4;
         padding: 8px; 
         text-align: center;
+        margin-bottom: 60px;
     }
 
-      nav a {
+    nav a {
         margin: 0 10px;
         text-decoration: none;
         color: #333;
         font-weight: bold;
-    } 
-
-    h1 {
-        margin-top: 20px; 
+        display: inline-block; 
+        transition: transform 0.3s ease;
     }
 
-    .project-list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        
-        max-width: 500px; 
-        margin: 20px auto; 
+    nav a:hover {
+        transform: translateY(-1px);
     }
-    
-    .project-card {
-        
-        background-color: #ffffff; 
-        
-        border: 1px solid #eee; 
-        border-radius: 4px; 
-        padding: 10px; 
+
+    #container {
+        max-width: 450px; 
+        margin: 0 auto; 
         text-align: left;
-        transition: background-color 0.2s;
     }
-    .project-card:hover {
-        background-color: #f5f5f5; 
+
+    .section {
+        margin-bottom: 25px;
     }
-    .project-card a {
-        color: inherit;
+
+    .section h3 {
+        font-size: 0.85em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #888;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 3px;
+    }
+
+    .item-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .item-list li {
+        margin-bottom: 8px;
+        line-height: 1.2;
+    }
+
+    .item-link {
         text-decoration: none;
-        display: block;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.95em;
     }
-    .project-card h2 {
-        margin: 0 0 5px 0; 
-        font-size: 1.2em; 
+
+    .item-link:hover {
+        text-decoration: underline;
     }
-    .project-card p {
-        margin: 0; 
-        font-size: 0.9em; 
-        color: #666; 
+
+    .item-desc {
+        display: inline;
+        font-size: 0.85em;
+        color: #777;
+        margin-left: 5px;
     }
-    
+
+    .item-desc::before {
+        content: "— ";
+        color: #ccc;
+    }
+
     </style>
 </head>
 <body>
+
     <nav>
         <a href="index.html">Home</a>
-        <a href="CV.html">CV</a>
+        <a href="research-trips.html">Research Trips</a>
         <a href="mailto:kurpiden@cvut.cz">Email Me</a>
-
     </nav>
 
-    <h1>Projects</h1>
+    <div id="container">
 
-    <div class="project-list">
-        <div class="project-card">
-            <a href="https://integrationbeefjfi.com/">
-                <h2>Integration Bee</h2>
-                <p>Very first Integration competition open to public at FJFI</p>
-            </a>
+        <div class="section">
+            <h3>Mathematics Notes</h3>
+            <ul class="item-list">
+                 <li>
+                    <a class="item-link" href="calculus.pdf">The Algebras</a>
+                    <span class="item-desc">Textbooks, notes and tips</span>
+                </li>
+                <li>
+                    <a class="item-link" href="calculus.pdf">Real Analysis 1-4</a>
+                    <span class="item-desc">Notes and problem sets</span>
+                </li>
+            </ul>
         </div>
 
-        <div class="project-card">
-            <a href="#">
-                <h2>Mathematical Modelling Competition</h2>
-                <p>Site under construction. If you want to help me, email me asap</p>
-            </a>
+        <div class="section">
+            <h3>Competitions</h3>
+            <ul class="item-list">
+                <li>
+                    <a class="item-link" href="https://integrationbeefjfi.com/">Integration Bee</a>
+                    <span class="item-desc">FJFI public competition</span>
+                </li>
+                <li>
+                    <a class="item-link" href="#">Modelling Comp</a>
+                    <span class="item-desc">Under construction</span>
+                </li>
+            </ul>
         </div>
 
-
-        <div class="project-card">
-            <a href="aat.html">
-                <h2>AAT - Analysis Aptitude Testing</h2>
-                <p>Analysis aptitude testing with new tests every week</p>
-            </a>
+        <div class="section">
+            <h3>Miscellaneous</h3>
+            <ul class="item-list">
+                <li>
+                    <a class="item-link" href="project120.html">Project #120</a>
+                    <span class="item-desc">The ultimate beer app</span>
+                </li>
+            </ul>
         </div>
 
-        <div class="project-card">
-            <a href="subjects_I_hated.html">
-                <h2>How I Learned the Subjects I Once Hated</h2>
-                <p>Personal and educational resource dedicated to the subjects that caused me the most pain.</p>
-            </a>
-        </div>
-
-        <div class="project-card">
-            <a href="project120.html">
-                <h2>Project #120</h2>
-                <p>The ultimate beer app</p>
-            </a>
-        </div>
     </div>
 
-
-    
 </body>
 </html>
