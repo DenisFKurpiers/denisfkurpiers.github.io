@@ -69,42 +69,28 @@
         padding-bottom: 5px;
     }
 
-    
-    .image-gallery {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 15px;
-        margin: 30px 0;
-        justify-content: center; 
+    .photo-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
     }
 
-    .image-gallery .image-placeholder {
-        flex: 1; 
-        min-width: 200px; 
-        max-width: 30%; 
-        height: 200px; 
-        background-color: #e0e0e0;
-        border: 1px solid #ccc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #666;
-        font-style: italic;
-        font-size: 0.9em;
-        object-fit: cover; 
+    .photo-list li {
+        margin-bottom: 12px;
     }
 
-    
-    @media (max-width: 768px) {
-        .image-gallery .image-placeholder {
-            max-width: 45%; 
-        }
+    .photo-link {
+        text-decoration: none;
+        color: #555;
+        font-size: 0.95em;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+        display: inline-block;
     }
 
-    @media (max-width: 480px) {
-        .image-gallery .image-placeholder {
-            max-width: 100%; 
-        }
+    .photo-link:hover {
+        color: #000;
+        border-bottom: 1px solid #333;
     }
 
     </style>
@@ -120,7 +106,7 @@
 
     <div id="content">
         <p>
-            I remember seeing a video of a guy running around in the Everglades National Park catching critters and I thought that it´d be an interesting thing for me to try. So I sold some of my belongings (note being 17 at the time, I didn't have many of those) and decided to fly to Florida. Landing in Orlando, I remember feeling rather underwhelmed – this isnt the Florida I remember from the videos! Nevertheless I decided to visit some of the places that were recommended to me and had a great time. I talked to just about everyone I met and have learned much about the american redneck way of life. 
+            I remember seeing a video of a guy running around in the Everglades National Park catching critters and I thought that it´d be an interesting thing for me to try. So I sold some of my belongings (note being 17 at the time, I didn't have much of those) and decided to fly to Florida. Landing in Orlando, I remember feeling rather underwhelmed – this isnt the Florida I remember from the videos! Nevertheless I decided to visit some of the places that were recommended to me and had a great time. I talked to just about everyone I met and have learned much about the redneck way of life. 
         </p>
         <p>
             Notably though I met Dave, who worked at the Serpentarium in St. Cloud. I was enamoured by all the different types of reptiles they had in their facility and I let him know. I´d like to think my genuine enthusiasm was a refreshment compared to the usual clientele of this roadside attraction, so much so, that I got to see much more of the whole operation than I would´ve initially guessed. 
@@ -129,25 +115,28 @@
             The next summer and the summer after that, I was invited by Dave to go work at the very same facility, alongside him and the owner George. There I was involved in the animal welfare and handling of the most venomous reptiles known to man and I was privy to the whole antivenom production operation. 
         </p>
         <p>
-            Returning back to my highschool, I might have gotten too carried away with the whole ordeal and while trying to do my own pseudo-research on said venom, I caused much distress both to my educators at the time and local police authorities. Ive learned to be slightly more careful nowadays.
+            Returning back to my highschool, I might have gotten too carried away with the whole ordeal and while trying to do my own pseudo-research on said venom, I caused much distress both to my educators at the time and local police authorities. I've learned to be slightly more careful nowadays.
         </p>
-            Despite never arriving to the Everglades, this experience shaped my life in many different ways, firstly I realised just how far one could get just by asking around! More importantly tough, it showed me how interesting life could be if you alow yourself to be geniounly curious.
+            Despite never arriving to the Everglades, this experience shaped my life in many different ways, firstly, I realised just how far one could get just by asking around! More importantly tough, it showed me how interesting life could be if you alow yourself to be genuinely curious.
         </p>
         <p>
             Thanks Dave and thank you George.
         </p>
-        
-        <div class="image-gallery">
-            <a href="images/gang.png" target="_blank">
-                <img src="images/gang.png" alt="George (left), Me, Dave (right)" class="image-placeholder">
+
+        <div class="photo-links">
+            <a href="images/gang.png" target="_blank" class="photo-link"> 
+                George (left), Me, Dave (right) 
             </a>
-            <a href="images/pete.jpeg" target="_blank">
-                <img src="images/pete.jpeg" alt="Pete the 70 year old American alligator" class="image-placeholder">
+            <br>
+            <a href="images/pete.jpeg" target="_blank" class="photo-link">
+                Pete the 70 year old American alligator
             </a>
-            <a href="images/willie.jpeg" target="_blank">
-                <img src="images/willie.jpeg" alt="Willie the Nile crocodile" class="image-placeholder">
+            <br>
+            <a href="images/willie.jpeg" target="_blank" class="photo-link">
+                Willie the Nile crocodile with spine issues
             </a>
         </div>
+    </div>
 
        
 
